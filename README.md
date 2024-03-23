@@ -8,3 +8,5 @@ Last Update: 2024, March.
 TO DO
 * different fps causing speed problem
 * Bullet collision
+* Hunt & escape tactic for bot flightz
+* multiplayer > p2p 
