@@ -6,7 +6,7 @@ https://rawcdn.githack.com/alperenbutun/free-time-project/5be066e/index.html
 Last Update: 2024, March.
 
 TO DO
-* different fps causing speed problem
+* different fps
 * Bullet collision
-* Hunt & escape tactic for bot flightz
-* multiplayer > p2p 
+* Hunt or escape tactic for bot flightz
+* multiplayer
