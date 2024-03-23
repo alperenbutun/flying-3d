@@ -7,5 +7,5 @@ Last Update: 2024, March.
 TO DO
 * different fps
 * Bullet collision
-* Hunt or escape tactic for bot flightz
+* bot flight
 * multiplayer
