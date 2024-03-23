@@ -8,4 +8,4 @@ Last Update: 2024, March.
 TO DO
 * different fps causing speed problem
 * Bullet collision
-* Bullet volume
+* ☑ Bullet volume
