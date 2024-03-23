@@ -5,7 +5,7 @@ MOST RECENT VERSION: https://rawcdn.githack.com/alperenbutun/free-time-project/5
 Last Update: 2024, March.
 
 TO DO
-* different fps
-* Bullet collision
 * bot flight
+* Bullet collision
+* different fps
 * multiplayer
