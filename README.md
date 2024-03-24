@@ -5,7 +5,8 @@ MOST RECENT VERSION: https://rawcdn.githack.com/alperenbutun/free-time-project/e
 Last Update: 2024, March.
 
 TO DO
+* slower rotate for flight (smoother control)
+* bullet top
 * bot flight
-* Bullet collision
 * different fps
 * multiplayer
