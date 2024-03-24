@@ -1,6 +1,6 @@
 A ThreeJS project simulating the movement of war jets in one-dimensional space
 
-MOST RECENT VERSION: https://rawcdn.githack.com/alperenbutun/free-time-project/76d00f6/index.html
+MOST RECENT VERSION: https://rawcdn.githack.com/alperenbutun/free-time-project/e84fad6/index.html
 
 Last Update: 2024, March.
 
