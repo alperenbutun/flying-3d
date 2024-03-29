@@ -73,7 +73,7 @@ function printCountDown() {
 function bullet(_0x553f0a) {
     const _0x372905 = _0x109e50;
     if (!continueGame) return;
-    if (flightList[_0x553f0a][_0x372905(0x149)] == '<' || flightList[_0x553f0a][_0x372905(0x149)] == '>' || flightList[_0x553f0a]['hararet'] >= 0x64) return;
+    if (flightList[_0x553f0a][_0x372905(0x149)] == '<' || flightList[_0x553f0a][_0x372905(0x149)] == '>' || flightList[_0x553f0a][_0x372905(0x149)] == '<<' || flightList[_0x553f0a][_0x372905(0x149)] == '>>' || flightList[_0x553f0a]['hararet'] >= 0x64) return;
     flightList[_0x553f0a]['dt'][_0x372905(0x112)]({
         'name': _0x372905(0xfe) + _0x553f0a + '' + new Date()[_0x372905(0x142)](),
         'moveCount': 0x0
