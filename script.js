@@ -282,7 +282,7 @@ function animate() {
     renderer[_0x4d681d(0x165)](scene, camera);
 }
 setInterval(function() {
-
+    console.log(flightList);
 }, 500);
 function beforeFlightLoop() {
 
