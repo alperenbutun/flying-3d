@@ -284,8 +284,6 @@ function animate() {
 setInterval(function() {
 }, 500);
 function beforeFlightLoop() {
-
 }
 function afterFlightLoop() {
-
 }
