@@ -266,7 +266,7 @@ function animate() {
       if (_0x320539.rotation.z <= -Math.PI / 2.6) {
         _0x320539.rotation.z = -Math.PI / 2.6;
         _0x320539.rotation.y += Math.PI / 0x10e;
-        flightList[_0x2cda66].force++;
+        flightList[_0x2cda66].force+=1+1;
       }
     } else {
       if (flightList[_0x2cda66].rotate === '>') {
@@ -274,7 +274,7 @@ function animate() {
         if (_0x320539.rotation.z >= Math.PI / 2.6) {
           _0x320539.rotation.z = Math.PI / 2.6;
           _0x320539.rotation.y -= Math.PI / 0x10e;
-          flightList[_0x2cda66].force++;
+          flightList[_0x2cda66].force+=1+1;
         }
       } else {
         if (flightList[_0x2cda66].rotate === '<<' && _0x320539.rotation.z == 0x0) {
