@@ -163,13 +163,13 @@ window.startTheGame = function () {
         bullet(0x0);
         flightList[0x0].dtInterval = setInterval(function () {
           bullet(0x0);
-        }, 0x32);
+        }, 16);
         break;
       case 0x3:
         bullet(0x0);
         flightList[0x0].dtInterval = setInterval(function () {
           bullet(0x0);
-        }, 0x32);
+        }, 16);
         break;
     }
   });
