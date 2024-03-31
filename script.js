@@ -98,7 +98,7 @@ new GLTFLoader().load("https://rawcdn.githack.com/alperenbutun/free-time-project
       _0x2331a4.material.color.b = 0x0;
     }
   });
-  for (let _0x48639e = 0x0; _0x48639e < 0x5; _0x48639e++) {
+  for (let _0x48639e = 0x0; _0x48639e < 10; _0x48639e++) {
     flightList[flightList.length] = {
       'name': "flight" + _0x48639e,
       'rotate': '|',
@@ -163,13 +163,13 @@ window.startTheGame = function () {
         bullet(0x0);
         flightList[0x0].dtInterval = setInterval(function () {
           bullet(0x0);
-        }, 16);
+        }, 32);
         break;
       case 0x3:
         bullet(0x0);
         flightList[0x0].dtInterval = setInterval(function () {
           bullet(0x0);
-        }, 16);
+        }, 32);
         break;
     }
   });
