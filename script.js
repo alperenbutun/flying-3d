@@ -3,7 +3,7 @@ import { GLTFLoader } from 'https://rawcdn.githack.com/mrdoob/three.js/master/ex
 let flightModel = '';
 let hitTextTimeout = '';
 let flightList = [];
-let countdown = 180;
+let countdown = 180; 
 let continueGame = true;
 const scene = new _0x1391a9.Scene();
 scene.background = new _0x1391a9.CubeTextureLoader().setPath("texture/cubemap/").load(["right.jpeg", 'left.jpeg', 'top.jpeg', "bottom.jpeg", "front.jpeg", "back.jpeg"]);
