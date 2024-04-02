@@ -249,7 +249,7 @@ function animate() {
   }
   
 count++;
-if (count % 3 == 0) {
+if (count % 2 == 0) {
   	return;
   } 
   
