@@ -1,1 +1,354 @@
-const _0xb6366f=_0x5b4e;(function(_0x22caa9,_0x3a9662){const _0x3af624=_0x5b4e,_0x4e02aa=_0x22caa9();while(!![]){try{const _0x530e7f=parseInt(_0x3af624(0xcf))/0x1+parseInt(_0x3af624(0x115))/0x2*(-parseInt(_0x3af624(0x114))/0x3)+parseInt(_0x3af624(0xa0))/0x4*(-parseInt(_0x3af624(0xa5))/0x5)+parseInt(_0x3af624(0xd8))/0x6+-parseInt(_0x3af624(0x119))/0x7*(-parseInt(_0x3af624(0xb7))/0x8)+parseInt(_0x3af624(0x108))/0x9+parseInt(_0x3af624(0x101))/0xa*(parseInt(_0x3af624(0x104))/0xb);if(_0x530e7f===_0x3a9662)break;else _0x4e02aa['push'](_0x4e02aa['shift']());}catch(_0x2a96e3){_0x4e02aa['push'](_0x4e02aa['shift']());}}}(_0x4abc,0x1ab80));import*as _0xc385e8 from'three';import{GLTFLoader}from'https://rawcdn.githack.com/mrdoob/three.js/master/examples/jsm/loaders/GLTFLoader.js';let flightModel='',flightSprite=[],flightList=[],countdown=0x16d,continueGame=!![],scene=new _0xc385e8[(_0xb6366f(0xdf))](),DirectionalLight=new _0xc385e8[(_0xb6366f(0xbb))](0xffffff,0x8);function _0x4abc(){const _0x4a4b4e=['keydown','which','PlaneGeometry','%\x20(','3010QnigIp','Sprite','keyCode','div#bullet','translateZ','clone','<div\x20style=\x22position:relative;float:left;width:100%;height:32px;\x22><span\x20style=\x22position:relative;float:left;left:11px;top:5px;font-weight:','none','span#percentage','MB\x20of\x2032MB)\x20please\x20wait...','total','normal','keyup','#table-head','div#game','innerHTML','wrapT','WebGLRenderer','80oqhYXR','SpriteMaterial','repeat','startTheGame','DirectionalLight','traverse','strokeStyle','floor','mousedown','innerHeight','rotate','#fullscreen-button','right.jpeg','clearRect','colorSpace','map','CubeTextureLoader','flight','style','texture/cubemap/','material','front.jpeg','fillStyle','autopilot','123215DbotVj','load','</span><span\x20style=\x22position:relative;float:right;right:11px;top:5px;\x22>','set','title','top.jpeg','sprite','resize','clickInterval','262740cQvwoI','span#countdown','getTime','beginPath','target','ceil','background','Scene','loaded','</span></div>','sort','querySelector','span#loading','clientWidth','gothit','\x20>\x20','translateX','getContext','innerWidth','clientX','mouseup','canvas#map','700','hit','TextureLoader','add','getElementById','fill','bullet','appendChild','back.jpeg','addEventListener','color','block','wrapS','getObjectByName','arc','length','PerspectiveCamera','https://rawcdn.githack.com/alperenbutun/free-time-project/f881038/texture/texture.jpg','#table','50mNqUMh','random','span#bullet-text','40821RvDShp','name','https://rawcdn.githack.com/alperenbutun/free-time-project/61618a8/texture/flash.png','RepeatWrapping','663165dFonzH','div#tab-text','black','contextmenu','position','visible','average','round','setPath','outputEncoding','left.jpeg','translateY','3EmgPpZ','317854Spockd','red','rotation','setSize','45997akolhb','display','MeshPhongMaterial','render','376jLtxZC'];_0x4abc=function(){return _0x4a4b4e;};return _0x4abc();}scene[_0xb6366f(0xde)]=new _0xc385e8[(_0xb6366f(0xc7))]()[_0xb6366f(0x110)](_0xb6366f(0xca))[_0xb6366f(0xd0)]([_0xb6366f(0xc3),_0xb6366f(0x112),_0xb6366f(0xd4),'bottom.jpeg',_0xb6366f(0xcc),_0xb6366f(0xf6)]),scene[_0xb6366f(0xf1)](DirectionalLight);let camera=new _0xc385e8[(_0xb6366f(0xfe))](0x32,window[_0xb6366f(0xea)]/window['innerHeight'],0.1,0x2710),canvas=document[_0xb6366f(0xf2)](_0xb6366f(0xc6)),ctx=canvas[_0xb6366f(0xe9)]('2d'),map=new _0xc385e8['TextureLoader']()[_0xb6366f(0xd0)](_0xb6366f(0x106)),sprite=new _0xc385e8[(_0xb6366f(0xa6))](new _0xc385e8[(_0xb6366f(0xb8))]({'map':map}));sprite['scale']['set'](0xa,0xa,0xa);const renderer=new _0xc385e8[(_0xb6366f(0xb6))]();renderer[_0xb6366f(0x111)]=_0xc385e8['sRGBEncoding'],renderer[_0xb6366f(0x118)](window['innerWidth'],window[_0xb6366f(0xc0)]),window[_0xb6366f(0xf7)](_0xb6366f(0xd6),onWindowResize);function onWindowResize(){const _0x39e887=_0xb6366f;renderer[_0x39e887(0x118)](window[_0x39e887(0xea)],window[_0x39e887(0xc0)]);}function _0x5b4e(_0x3798fc,_0xc0a9d6){const _0x4abccf=_0x4abc();return _0x5b4e=function(_0x5b4edb,_0xac5c0){_0x5b4edb=_0x5b4edb-0x9d;let _0x3068c3=_0x4abccf[_0x5b4edb];return _0x3068c3;},_0x5b4e(_0x3798fc,_0xc0a9d6);}function printCountDown(){const _0x2a97bf=_0xb6366f;if(!continueGame)return;if(Math[_0x2a97bf(0xbe)](countdown)==countdown){let _0x94fa0f=Math[_0x2a97bf(0xbe)](countdown/0x3c),_0x31842f=countdown-Math['floor'](countdown/0x3c)*0x3c;document[_0x2a97bf(0xe3)](_0x2a97bf(0xd9))[_0x2a97bf(0xb4)]=_0x94fa0f+':'+(_0x31842f<0xa?'0'+_0x31842f:_0x31842f);if(countdown==0x0){continueGame=![],document[_0x2a97bf(0xe3)](_0x2a97bf(0x100))[_0x2a97bf(0xc9)]['display']=_0x2a97bf(0xf9),document['querySelector'](_0x2a97bf(0xb2))['style']['display']='block',document[_0x2a97bf(0xe3)]('div#tab-text')[_0x2a97bf(0xc9)][_0x2a97bf(0x9d)]=_0x2a97bf(0xac);return;}}}function clicked(_0x5cc0fe,_0x253359){const _0x3691d2=_0xb6366f;if(!continueGame)return;if(flightList[_0x5cc0fe][_0x3691d2(0xc1)]=='<'||flightList[_0x5cc0fe][_0x3691d2(0xc1)]=='>')return;_0x253359==0x0?clearInterval(flightList[_0x5cc0fe][_0x3691d2(0xd7)]):(flightSprite[_0x5cc0fe]=scene[_0x3691d2(0xfb)](_0x3691d2(0xd5)+_0x5cc0fe),flightSprite[_0x5cc0fe][_0x3691d2(0x10d)]=!![],flightList[_0x5cc0fe][_0x3691d2(0xf4)]++,setTimeout(function(){const _0x3de43e=_0x3691d2;flightSprite[_0x5cc0fe][_0x3de43e(0x10d)]=![],document['querySelector'](_0x3de43e(0x103))[_0x3de43e(0xb4)]=flightList[_0x5cc0fe][_0x3de43e(0xf4)];},0x23),clearInterval(flightList[_0x5cc0fe]['clickInterval']),flightList[_0x5cc0fe]['clickInterval']=setInterval(function(){const _0x58f3fa=_0x3691d2;flightSprite[_0x5cc0fe][_0x58f3fa(0x10d)]=!![],flightList[_0x5cc0fe][_0x58f3fa(0xf4)]++,setTimeout(function(){const _0x428f44=_0x58f3fa;flightSprite[_0x5cc0fe][_0x428f44(0x10d)]=![],document[_0x428f44(0xe3)](_0x428f44(0x103))['innerHTML']=flightList[_0x5cc0fe][_0x428f44(0xf4)];},0x23);},0x46));}const gl=new _0xc385e8[(_0xb6366f(0xf0))]()[_0xb6366f(0xd0)](_0xb6366f(0xff)),gg=new _0xc385e8[(_0xb6366f(0xa3))](0x249f0,0x249f0),gm=new _0xc385e8[(_0xb6366f(0x9e))]({'color':0xffffff,'map':gl,'transparent':!![],'opacity':0.01}),ground=new _0xc385e8['Mesh'](gg,gm);ground[_0xb6366f(0x117)]['x']=-Math['PI']/0x2,ground[_0xb6366f(0xcb)][_0xb6366f(0xc6)][_0xb6366f(0xb9)][_0xb6366f(0xd2)](0x40,0x40),ground['material']['map'][_0xb6366f(0xfa)]=_0xc385e8[_0xb6366f(0x107)],ground[_0xb6366f(0xcb)]['map'][_0xb6366f(0xb5)]=_0xc385e8[_0xb6366f(0x107)],ground[_0xb6366f(0xcb)][_0xb6366f(0xc6)][_0xb6366f(0xc5)]=_0xc385e8['SRGBColorSpace'],scene[_0xb6366f(0xf1)](ground),new GLTFLoader()['load']('https://rawcdn.githack.com/alperenbutun/free-time-project/master/gltf/f35.glb',function(_0x438c68){const _0x397788=_0xb6366f;flightModel=_0x438c68['scene'],flightModel[_0x397788(0xbc)](_0x33fc14=>{const _0x4a88f1=_0x397788;_0x33fc14['material']&&(_0x33fc14[_0x4a88f1(0xcb)][_0x4a88f1(0xf8)]['r']=0x0,_0x33fc14['material']['color']['g']=0x0,_0x33fc14['material']['color']['b']=0x0);});for(let _0x1b0c64=0x0;_0x1b0c64<0x8;_0x1b0c64++){flightList[flightList[_0x397788(0xfd)]]={'name':_0x397788(0xc8)+_0x1b0c64,'rotate':'|','autopilot':![],'bullet':0x0,'hit':0x0,'gothit':0x0,'average':0x0,'clickInterval':''};let _0x2b60eb=flightModel[_0x397788(0xaa)]();_0x2b60eb['name']=_0x397788(0xc8)+_0x1b0c64,_0x2b60eb[_0x397788(0x10c)][_0x397788(0xd2)](Math[_0x397788(0x10f)](Math['random']()*0x1388)-0x9c4,0x3,Math[_0x397788(0x10f)](Math[_0x397788(0x102)]()*0x1388)-0x9c4),_0x2b60eb['rotation']['y']=Math[_0x397788(0x102)]()*Math['PI']*0x2;let _0x2e3528=sprite[_0x397788(0xaa)]();_0x2e3528['name']='sprite'+_0x1b0c64,_0x2e3528[_0x397788(0x10d)]=![],scene['add'](_0x2e3528),scene[_0x397788(0xf1)](_0x2b60eb);}document[_0x397788(0xe3)](_0x397788(0xc2))['style'][_0x397788(0x9d)]=_0x397788(0xf9);},function(_0x4e6ad8){const _0x164402=_0xb6366f;let _0x199c27=Math[_0x164402(0xdd)](_0x4e6ad8[_0x164402(0xe0)]/_0x4e6ad8[_0x164402(0xaf)]*0x64);document[_0x164402(0xe3)](_0x164402(0xad))[_0x164402(0xb4)]='\x20'+_0x199c27+_0x164402(0xa4)+Math[_0x164402(0xbe)](0x20*_0x199c27/0x64)+_0x164402(0xae);}),window[_0xb6366f(0xba)]=function(){const _0x3f5924=_0xb6366f;document[_0x3f5924(0xe3)](_0x3f5924(0xc2))[_0x3f5924(0xc9)][_0x3f5924(0x9d)]=_0x3f5924(0xac),setTimeout(function(){const _0x57339f=_0x3f5924;document['body'][_0x57339f(0xf5)](renderer['domElement']),document[_0x57339f(0xe3)](_0x57339f(0xe4))[_0x57339f(0xc9)][_0x57339f(0x9d)]=_0x57339f(0xac),document[_0x57339f(0xe3)](_0x57339f(0xed))[_0x57339f(0xc9)][_0x57339f(0x9d)]=_0x57339f(0xf9),document[_0x57339f(0xe3)](_0x57339f(0xa8))['style'][_0x57339f(0x9d)]=_0x57339f(0xf9),document[_0x57339f(0xe3)](_0x57339f(0xb3))[_0x57339f(0xc9)][_0x57339f(0x9d)]='block',document[_0x57339f(0xe3)](_0x57339f(0x109))[_0x57339f(0xc9)][_0x57339f(0x9d)]=_0x57339f(0xf9),animate();},0x1f4),document[_0x3f5924(0xf7)](_0x3f5924(0xbf),function(_0x3aabcf){const _0x53906d=_0x3f5924;if(!continueGame)return;switch(_0x3aabcf[_0x53906d(0xa2)]){case 0x1:if(!flightList[0x0][_0x53906d(0xce)]){if(_0x3aabcf[_0x53906d(0xeb)]<_0x3aabcf[_0x53906d(0xdc)][_0x53906d(0xe5)]*0.5)_0x3aabcf['clientX']-_0x3aabcf[_0x53906d(0xdc)][_0x53906d(0xe5)]*0.5>-0x7b?flightList[0x0]['rotate']='<<':flightList[0x0]['rotate']='<';else _0x3aabcf[_0x53906d(0xeb)]-_0x3aabcf[_0x53906d(0xdc)][_0x53906d(0xe5)]*0.5<0x7b?flightList[0x0][_0x53906d(0xc1)]='>>':flightList[0x0][_0x53906d(0xc1)]='>';}break;case 0x2:clicked(0x0,0x1);break;case 0x3:clicked(0x0,0x1);break;}}),document[_0x3f5924(0xf7)](_0x3f5924(0xec),function(_0x445e44){const _0x12ea87=_0x3f5924;if(!continueGame)return;switch(_0x445e44[_0x12ea87(0xa2)]){case 0x1:!flightList[0x0][_0x12ea87(0xce)]&&(flightList[0x0][_0x12ea87(0xc1)]='|');break;case 0x2:clicked(0x0,0x0);break;case 0x3:clicked(0x0,0x0);break;}}),document[_0x3f5924(0xf7)](_0x3f5924(0x10b),function(_0x164ec4){if(!continueGame)return;_0x164ec4['preventDefault']();}),document['addEventListener'](_0x3f5924(0xa1),function(_0x167d85){const _0x387677=_0x3f5924;if(!continueGame)return;switch(_0x167d85[_0x387677(0xa7)]){case 0x9:_0x167d85['preventDefault'](),document['querySelector'](_0x387677(0x100))[_0x387677(0xc9)][_0x387677(0x9d)]=_0x387677(0xf9),document[_0x387677(0xe3)]('#table-head')[_0x387677(0xc9)][_0x387677(0x9d)]=_0x387677(0xf9),document[_0x387677(0xe3)](_0x387677(0x109))[_0x387677(0xc9)][_0x387677(0x9d)]=_0x387677(0xac);break;}}),document[_0x3f5924(0xf7)](_0x3f5924(0xb1),function(_0x488d6a){const _0x3c3c8c=_0x3f5924;if(!continueGame)return;switch(_0x488d6a[_0x3c3c8c(0xa7)]){case 0x9:_0x488d6a['preventDefault'](),document[_0x3c3c8c(0xe3)](_0x3c3c8c(0x100))[_0x3c3c8c(0xc9)]['display']=_0x3c3c8c(0xac),document[_0x3c3c8c(0xe3)]('#table-head')[_0x3c3c8c(0xc9)][_0x3c3c8c(0x9d)]=_0x3c3c8c(0xac),document[_0x3c3c8c(0xe3)](_0x3c3c8c(0x109))[_0x3c3c8c(0xc9)][_0x3c3c8c(0x9d)]='block';break;}}),setInterval(function(){const _0xcfa906=_0x3f5924;if(!continueGame)return;let _0xaff39e=[];ctx[_0xcfa906(0xc4)](0x0,0x0,0x7d,0x7d);for(let _0x3c66c5=0x0;_0x3c66c5<flightList[_0xcfa906(0xfd)];_0x3c66c5++){let _0x114afc=scene[_0xcfa906(0xfb)](flightList[_0x3c66c5][_0xcfa906(0x105)]),_0x552254=[Math[_0xcfa906(0xbe)](_0x114afc[_0xcfa906(0x10c)]['x']/0x50)+62.5,Math['floor'](_0x114afc[_0xcfa906(0x10c)]['z']/0x50)+62.5];ctx[_0xcfa906(0xcd)]=_0x3c66c5==0x0?'red':_0xcfa906(0x10a),ctx[_0xcfa906(0xbd)]=_0x3c66c5==0x0?_0xcfa906(0x116):_0xcfa906(0x10a),ctx[_0xcfa906(0xdb)](),ctx[_0xcfa906(0xfc)](_0x552254[0x0],_0x552254[0x1],0x3,0x0,0x2*Math['PI']),ctx[_0xcfa906(0xf3)](),ctx['stroke'](),flightList[_0x3c66c5]['average']=flightList[_0x3c66c5]['hit']-flightList[_0x3c66c5]['gothit'],_0xaff39e[_0xaff39e[_0xcfa906(0xfd)]]=flightList[_0x3c66c5];}_0xaff39e[_0xcfa906(0xe2)](function(_0xa462d9,_0x3b142e){const _0x44e9de=_0xcfa906;return _0x3b142e[_0x44e9de(0x10e)]-_0xa462d9[_0x44e9de(0x10e)];}),document[_0xcfa906(0xe3)](_0xcfa906(0x100))[_0xcfa906(0xb4)]='';for(let _0x508623=0x0;_0x508623<_0xaff39e[_0xcfa906(0xfd)];_0x508623++){let _0x196aaf=_0x508623==0x0?_0xcfa906(0xee):_0xcfa906(0xb0);document[_0xcfa906(0xe3)](_0xcfa906(0x100))[_0xcfa906(0xb4)]+=_0xcfa906(0xab)+_0x196aaf+'\x22>'+_0xaff39e[_0x508623]['name']+_0xcfa906(0xd1)+_0xaff39e[_0x508623][_0xcfa906(0xef)]+'/'+_0xaff39e[_0x508623][_0xcfa906(0xe6)]+_0xcfa906(0xe7)+_0xaff39e[_0x508623][_0xcfa906(0x10e)]+_0xcfa906(0xe1);}countdown>0x0&&(countdown-=0.5,printCountDown());},0x1f4);};let date=new Date()['getTime']();function animate(){const _0x1bf3c1=_0xb6366f;requestAnimationFrame(animate);if(!continueGame)return;document[_0x1bf3c1(0xd3)]=new Date()[_0x1bf3c1(0xda)]()-date,date=new Date()[_0x1bf3c1(0xda)]();for(let _0xce61eb=0x0;_0xce61eb<flightList[_0x1bf3c1(0xfd)];_0xce61eb++){let _0x1be16c=scene[_0x1bf3c1(0xfb)](flightList[_0xce61eb][_0x1bf3c1(0x105)]);if(flightList[_0xce61eb][_0x1bf3c1(0xc1)]==='<')_0x1be16c['rotation']['z']-=Math['PI']/0x24,_0x1be16c[_0x1bf3c1(0x117)]['z']<=-Math['PI']/2.6&&(_0x1be16c[_0x1bf3c1(0x117)]['z']=-Math['PI']/2.6,_0x1be16c[_0x1bf3c1(0x117)]['y']+=Math['PI']/0x10e);else{if(flightList[_0xce61eb][_0x1bf3c1(0xc1)]==='>')_0x1be16c[_0x1bf3c1(0x117)]['z']+=Math['PI']/0x24,_0x1be16c[_0x1bf3c1(0x117)]['z']>=Math['PI']/2.6&&(_0x1be16c['rotation']['z']=Math['PI']/2.6,_0x1be16c[_0x1bf3c1(0x117)]['y']-=Math['PI']/0x10e);else{if(flightList[_0xce61eb][_0x1bf3c1(0xc1)]==='<<'&&_0x1be16c[_0x1bf3c1(0x117)]['z']==0x0)_0x1be16c[_0x1bf3c1(0x117)]['y']+=Math['PI']/0x438;else{if(flightList[_0xce61eb]['rotate']==='>>'&&_0x1be16c['rotation']['z']==0x0)_0x1be16c['rotation']['y']-=Math['PI']/0x438;else{if(Math['abs'](_0x1be16c[_0x1bf3c1(0x117)]['z'])<Math['PI']/0x24)_0x1be16c['rotation']['z']=0x0;else{if(_0x1be16c[_0x1bf3c1(0x117)]['z']>0x0)_0x1be16c[_0x1bf3c1(0x117)]['z']-=Math['PI']/0x24;else _0x1be16c[_0x1bf3c1(0x117)]['z']<0x0&&(_0x1be16c[_0x1bf3c1(0x117)]['z']+=Math['PI']/0x24);}}}}}let _0x189e86=-_0x1be16c[_0x1bf3c1(0x117)]['y']*(0xb4/Math['PI'])%0x168;_0x189e86=_0x189e86<0x0?0x168+_0x189e86:_0x189e86;if(_0x1be16c[_0x1bf3c1(0x10c)]['z']>=0x1388)flightList[_0xce61eb][_0x1bf3c1(0xce)]==![]&&(flightList[_0xce61eb][_0x1bf3c1(0xce)]=!![],_0x189e86>=0x0&&_0x189e86<=0x5a?flightList[_0xce61eb]['rotate']='>':flightList[_0xce61eb]['rotate']='<');else{if(_0x1be16c[_0x1bf3c1(0x10c)]['z']<=-0x1388)flightList[_0xce61eb][_0x1bf3c1(0xce)]==![]&&(flightList[_0xce61eb][_0x1bf3c1(0xce)]=!![],_0x189e86>=0xb4&&_0x189e86<=0x10e?flightList[_0xce61eb][_0x1bf3c1(0xc1)]='>':flightList[_0xce61eb][_0x1bf3c1(0xc1)]='<');else{if(_0x1be16c[_0x1bf3c1(0x10c)]['x']>=0x1388)flightList[_0xce61eb][_0x1bf3c1(0xce)]==![]&&(flightList[_0xce61eb][_0x1bf3c1(0xce)]=!![],_0x189e86>=0x10e&&_0x189e86<=0x168?flightList[_0xce61eb][_0x1bf3c1(0xc1)]='>':flightList[_0xce61eb][_0x1bf3c1(0xc1)]='<');else{if(_0x1be16c[_0x1bf3c1(0x10c)]['x']<=-0x1388)flightList[_0xce61eb][_0x1bf3c1(0xce)]==![]&&(flightList[_0xce61eb][_0x1bf3c1(0xce)]=!![],_0x189e86>=0x5a&&_0x189e86<=0xb4?flightList[_0xce61eb][_0x1bf3c1(0xc1)]='>':flightList[_0xce61eb][_0x1bf3c1(0xc1)]='<');else flightList[_0xce61eb][_0x1bf3c1(0xce)]==!![]&&(flightList[_0xce61eb][_0x1bf3c1(0xc1)]='|',flightList[_0xce61eb]['autopilot']=![]);}}}_0x1be16c['translateZ'](0x8);_0xce61eb==0x0&&(camera[_0x1bf3c1(0x10c)][_0x1bf3c1(0xd2)](_0x1be16c[_0x1bf3c1(0x10c)]['x'],_0x1be16c['position']['y'],_0x1be16c[_0x1bf3c1(0x10c)]['z']),camera[_0x1bf3c1(0x117)]['y']=_0x1be16c[_0x1bf3c1(0x117)]['y']+Math['PI'],camera[_0x1bf3c1(0xa9)](0x18),camera[_0x1bf3c1(0x113)](2.4));let _0x6534c2=scene[_0x1bf3c1(0xfb)](_0x1bf3c1(0xd5)+_0xce61eb);_0x6534c2[_0x1bf3c1(0x10c)]['set'](_0x1be16c[_0x1bf3c1(0x10c)]['x'],_0x1be16c[_0x1bf3c1(0x10c)]['y']+0.59,_0x1be16c['position']['z']),_0x6534c2['rotation']['y']=_0x1be16c[_0x1bf3c1(0x117)]['y'],_0x6534c2[_0x1bf3c1(0xa9)](0x5),_0x6534c2[_0x1bf3c1(0xe8)](-0.39);}renderer[_0x1bf3c1(0x9f)](scene,camera);}
+import * as _0xc385e8 from 'three';
+import { GLTFLoader } from 'https://rawcdn.githack.com/mrdoob/three.js/master/examples/jsm/loaders/GLTFLoader.js';
+let flightModel = '';
+let flightSprite = [];
+let flightList = [];
+let countdown = 0x16d;
+let continueGame = true;
+let scene = new _0xc385e8.Scene();
+let DirectionalLight = new _0xc385e8.DirectionalLight(0xffffff, 0x8);
+scene.background = new _0xc385e8.CubeTextureLoader().setPath("texture/cubemap/").load(["right.jpeg", "left.jpeg", "top.jpeg", 'bottom.jpeg', "front.jpeg", "back.jpeg"]);
+scene.add(DirectionalLight);
+let camera = new _0xc385e8.PerspectiveCamera(0x32, window.innerWidth / window.innerHeight, 0.1, 0x2710);
+let canvas = document.getElementById("map");
+let ctx = canvas.getContext('2d');
+let map = new _0xc385e8.TextureLoader().load("https://rawcdn.githack.com/alperenbutun/free-time-project/61618a8/texture/flash.png");
+let sprite = new _0xc385e8.Sprite(new _0xc385e8.SpriteMaterial({
+  'map': map
+}));
+sprite.scale.set(0xa, 0xa, 0xa);
+const renderer = new _0xc385e8.WebGLRenderer();
+renderer.outputEncoding = _0xc385e8.sRGBEncoding;
+renderer.setSize(window.innerWidth, window.innerHeight);
+window.addEventListener("resize", onWindowResize);
+function onWindowResize() {
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+function printCountDown() {
+  if (!continueGame) {
+    return;
+  }
+  if (Math.floor(countdown) == countdown) {
+    let _0x94fa0f = Math.floor(countdown / 0x3c);
+    let _0x31842f = countdown - Math.floor(countdown / 0x3c) * 0x3c;
+    document.querySelector("span#countdown").innerHTML = _0x94fa0f + ':' + (_0x31842f < 0xa ? '0' + _0x31842f : _0x31842f);
+    if (countdown == 0x0) {
+      continueGame = false;
+      document.querySelector("#table").style.display = "block";
+      document.querySelector("#table-head").style.display = 'block';
+      document.querySelector('div#tab-text').style.display = "none";
+      return;
+    }
+  }
+}
+function clicked(_0x5cc0fe, _0x253359) {
+  if (!continueGame) {
+    return;
+  }
+  if (flightList[_0x5cc0fe].rotate == '<' || flightList[_0x5cc0fe].rotate == '>') {
+    return;
+  }
+  if (_0x253359 == 0x0) {
+    clearInterval(flightList[_0x5cc0fe].clickInterval);
+  } else {
+    flightSprite[_0x5cc0fe] = scene.getObjectByName("sprite" + _0x5cc0fe);
+    flightSprite[_0x5cc0fe].visible = true;
+    flightList[_0x5cc0fe].bullet++;
+    setTimeout(function () {
+      flightSprite[_0x5cc0fe].visible = false;
+      document.querySelector("span#bullet-text").innerHTML = flightList[_0x5cc0fe].bullet;
+    }, 0x23);
+    clearInterval(flightList[_0x5cc0fe].clickInterval);
+    flightList[_0x5cc0fe].clickInterval = setInterval(function () {
+      flightSprite[_0x5cc0fe].visible = true;
+      flightList[_0x5cc0fe].bullet++;
+      setTimeout(function () {
+        flightSprite[_0x5cc0fe].visible = false;
+        document.querySelector("span#bullet-text").innerHTML = flightList[_0x5cc0fe].bullet;
+      }, 0x23);
+    }, 0x46);
+  }
+}
+const gl = new _0xc385e8.TextureLoader().load("https://rawcdn.githack.com/alperenbutun/free-time-project/f881038/texture/texture.jpg");
+const gg = new _0xc385e8.PlaneGeometry(0x249f0, 0x249f0);
+const gm = new _0xc385e8.MeshPhongMaterial({
+  'color': 0xffffff,
+  'map': gl,
+  'transparent': true,
+  'opacity': 0.01
+});
+const ground = new _0xc385e8.Mesh(gg, gm);
+ground.rotation.x = -Math.PI / 0x2;
+ground.material.map.repeat.set(0x40, 0x40);
+ground.material.map.wrapS = _0xc385e8.RepeatWrapping;
+ground.material.map.wrapT = _0xc385e8.RepeatWrapping;
+ground.material.map.colorSpace = _0xc385e8.SRGBColorSpace;
+scene.add(ground);
+new GLTFLoader().load('https://rawcdn.githack.com/alperenbutun/free-time-project/master/gltf/f35.glb', function (_0x438c68) {
+  flightModel = _0x438c68.scene;
+  flightModel.traverse(_0x33fc14 => {
+    if (_0x33fc14.material) {
+      _0x33fc14.material.color.r = 0x0;
+      _0x33fc14.material.color.g = 0x0;
+      _0x33fc14.material.color.b = 0x0;
+    }
+  });
+  for (let _0x1b0c64 = 0x0; _0x1b0c64 < 0x8; _0x1b0c64++) {
+    flightList[flightList.length] = {
+      'name': "flight" + _0x1b0c64,
+      'rotate': '|',
+      'autopilot': false,
+      'bullet': 0x0,
+      'hit': 0x0,
+      'gothit': 0x0,
+      'average': 0x0,
+      'clickInterval': ''
+    };
+    let _0x2b60eb = flightModel.clone();
+    _0x2b60eb.name = "flight" + _0x1b0c64;
+    _0x2b60eb.position.set(Math.round(Math.random() * 0x1388) - 0x9c4, 0x3, Math.round(Math.random() * 0x1388) - 0x9c4);
+    _0x2b60eb.rotation.y = Math.random() * Math.PI * 0x2;
+    let _0x2e3528 = sprite.clone();
+    _0x2e3528.name = 'sprite' + _0x1b0c64;
+    _0x2e3528.visible = false;
+    scene.add(_0x2e3528);
+    scene.add(_0x2b60eb);
+  }
+  document.querySelector("#fullscreen-button").style.display = "block";
+}, function (_0x4e6ad8) {
+  let _0x199c27 = Math.ceil(_0x4e6ad8.loaded / _0x4e6ad8.total * 0x64);
+  document.querySelector("span#percentage").innerHTML = " " + _0x199c27 + "% (" + Math.floor(0x20 * _0x199c27 / 0x64) + "MB of 32MB) please wait...";
+});
+window.startTheGame = function () {
+  document.querySelector("#fullscreen-button").style.display = "none";
+  setTimeout(function () {
+    document.body.appendChild(renderer.domElement);
+    document.querySelector("span#loading").style.display = "none";
+    document.querySelector("canvas#map").style.display = "block";
+    document.querySelector("div#bullet").style.display = "block";
+    document.querySelector("div#game").style.display = 'block';
+    document.querySelector("div#tab-text").style.display = "block";
+    animate();
+  }, 0x1f4);
+  document.addEventListener("mousedown", function (_0x3aabcf) {
+    if (!continueGame) {
+      return;
+    }
+    switch (_0x3aabcf.which) {
+      case 0x1:
+        if (!flightList[0x0].autopilot) {
+          if (_0x3aabcf.clientX < _0x3aabcf.target.clientWidth * 0.5) {
+            if (_0x3aabcf.clientX - _0x3aabcf.target.clientWidth * 0.5 > -0x7b) {
+              flightList[0x0].rotate = '<<';
+            } else {
+              flightList[0x0].rotate = '<';
+            }
+          } else if (_0x3aabcf.clientX - _0x3aabcf.target.clientWidth * 0.5 < 0x7b) {
+            flightList[0x0].rotate = '>>';
+          } else {
+            flightList[0x0].rotate = '>';
+          }
+        }
+        break;
+      case 0x2:
+        clicked(0x0, 0x1);
+        break;
+      case 0x3:
+        clicked(0x0, 0x1);
+        break;
+    }
+  });
+  document.addEventListener("mouseup", function (_0x445e44) {
+    if (!continueGame) {
+      return;
+    }
+    switch (_0x445e44.which) {
+      case 0x1:
+        if (!flightList[0x0].autopilot) {
+          flightList[0x0].rotate = '|';
+        }
+        break;
+      case 0x2:
+        clicked(0x0, 0x0);
+        break;
+      case 0x3:
+        clicked(0x0, 0x0);
+        break;
+    }
+  });
+  document.addEventListener("contextmenu", function (_0x164ec4) {
+    if (!continueGame) {
+      return;
+    }
+    _0x164ec4.preventDefault();
+  });
+  document.addEventListener("keydown", function (_0x167d85) {
+    if (!continueGame) {
+      return;
+    }
+    switch (_0x167d85.keyCode) {
+      case 0x9:
+        _0x167d85.preventDefault();
+        document.querySelector("#table").style.display = "block";
+        document.querySelector('#table-head').style.display = "block";
+        document.querySelector("div#tab-text").style.display = "none";
+        break;
+    }
+  });
+  document.addEventListener("keyup", function (_0x488d6a) {
+    if (!continueGame) {
+      return;
+    }
+    switch (_0x488d6a.keyCode) {
+      case 0x9:
+        _0x488d6a.preventDefault();
+        document.querySelector("#table").style.display = "none";
+        document.querySelector('#table-head').style.display = "none";
+        document.querySelector("div#tab-text").style.display = 'block';
+        break;
+    }
+  });
+  setInterval(function () {
+    if (!continueGame) {
+      return;
+    }
+    let _0xaff39e = [];
+    ctx.clearRect(0x0, 0x0, 0x7d, 0x7d);
+    for (let _0x3c66c5 = 0x0; _0x3c66c5 < flightList.length; _0x3c66c5++) {
+      let _0x114afc = scene.getObjectByName(flightList[_0x3c66c5].name);
+      let _0x552254 = [Math.floor(_0x114afc.position.x / 0x50) + 62.5, Math.floor(_0x114afc.position.z / 0x50) + 62.5];
+      ctx.fillStyle = _0x3c66c5 == 0x0 ? 'red' : "black";
+      ctx.strokeStyle = _0x3c66c5 == 0x0 ? "red" : "black";
+      ctx.beginPath();
+      ctx.arc(_0x552254[0x0], _0x552254[0x1], 0x3, 0x0, 0x2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      flightList[_0x3c66c5].average = flightList[_0x3c66c5].hit - flightList[_0x3c66c5].gothit;
+      _0xaff39e[_0xaff39e.length] = flightList[_0x3c66c5];
+    }
+    _0xaff39e.sort(function (_0xa462d9, _0x3b142e) {
+      return _0x3b142e.average - _0xa462d9.average;
+    });
+    document.querySelector("#table").innerHTML = '';
+    for (let _0x508623 = 0x0; _0x508623 < _0xaff39e.length; _0x508623++) {
+      let _0x196aaf = _0x508623 == 0x0 ? "700" : "normal";
+      document.querySelector("#table").innerHTML += "<div style=\"position:relative;float:left;width:100%;height:32px;\"><span style=\"position:relative;float:left;left:11px;top:5px;font-weight:" + _0x196aaf + "\">" + _0xaff39e[_0x508623].name + "</span><span style=\"position:relative;float:right;right:11px;top:5px;\">" + _0xaff39e[_0x508623].hit + '/' + _0xaff39e[_0x508623].gothit + " > " + _0xaff39e[_0x508623].average + "</span></div>";
+    }
+    if (countdown > 0x0) {
+      countdown -= 0.5;
+      printCountDown();
+    }
+  }, 0x1f4);
+};
+let date = new Date().getTime();
+let count =0;
+function animate() {
+  requestAnimationFrame(animate);
+  if (!continueGame) {
+    return;
+  }
+  if (count % 3 == 0) {
+  	return;
+  } 
+  count++;
+  document.title = new Date().getTime() - date;
+  date = new Date().getTime();
+
+  for (let _0xce61eb = 0x0; _0xce61eb < flightList.length; _0xce61eb++) {
+    let _0x1be16c = scene.getObjectByName(flightList[_0xce61eb].name);
+    if (flightList[_0xce61eb].rotate === '<') {
+      _0x1be16c.rotation.z -= Math.PI / 0x24;
+      if (_0x1be16c.rotation.z <= -Math.PI / 2.6) {
+        _0x1be16c.rotation.z = -Math.PI / 2.6;
+        _0x1be16c.rotation.y += Math.PI / 0x10e;
+      }
+    } else {
+      if (flightList[_0xce61eb].rotate === '>') {
+        _0x1be16c.rotation.z += Math.PI / 0x24;
+        if (_0x1be16c.rotation.z >= Math.PI / 2.6) {
+          _0x1be16c.rotation.z = Math.PI / 2.6;
+          _0x1be16c.rotation.y -= Math.PI / 0x10e;
+        }
+      } else {
+        if (flightList[_0xce61eb].rotate === '<<' && _0x1be16c.rotation.z == 0x0) {
+          _0x1be16c.rotation.y += Math.PI / 0x438;
+        } else {
+          if (flightList[_0xce61eb].rotate === '>>' && _0x1be16c.rotation.z == 0x0) {
+            _0x1be16c.rotation.y -= Math.PI / 0x438;
+          } else {
+            if (Math.abs(_0x1be16c.rotation.z) < Math.PI / 0x24) {
+              _0x1be16c.rotation.z = 0x0;
+            } else {
+              if (_0x1be16c.rotation.z > 0x0) {
+                _0x1be16c.rotation.z -= Math.PI / 0x24;
+              } else if (_0x1be16c.rotation.z < 0x0) {
+                _0x1be16c.rotation.z += Math.PI / 0x24;
+              }
+            }
+          }
+        }
+      }
+    }
+    let _0x189e86 = -_0x1be16c.rotation.y * (0xb4 / Math.PI) % 0x168;
+    _0x189e86 = _0x189e86 < 0x0 ? 0x168 + _0x189e86 : _0x189e86;
+    if (_0x1be16c.position.z >= 0x1388) {
+      if (flightList[_0xce61eb].autopilot == false) {
+        flightList[_0xce61eb].autopilot = true;
+        if (_0x189e86 >= 0x0 && _0x189e86 <= 0x5a) {
+          flightList[_0xce61eb].rotate = '>';
+        } else {
+          flightList[_0xce61eb].rotate = '<';
+        }
+      }
+    } else {
+      if (_0x1be16c.position.z <= -0x1388) {
+        if (flightList[_0xce61eb].autopilot == false) {
+          flightList[_0xce61eb].autopilot = true;
+          if (_0x189e86 >= 0xb4 && _0x189e86 <= 0x10e) {
+            flightList[_0xce61eb].rotate = '>';
+          } else {
+            flightList[_0xce61eb].rotate = '<';
+          }
+        }
+      } else {
+        if (_0x1be16c.position.x >= 0x1388) {
+          if (flightList[_0xce61eb].autopilot == false) {
+            flightList[_0xce61eb].autopilot = true;
+            if (_0x189e86 >= 0x10e && _0x189e86 <= 0x168) {
+              flightList[_0xce61eb].rotate = '>';
+            } else {
+              flightList[_0xce61eb].rotate = '<';
+            }
+          }
+        } else {
+          if (_0x1be16c.position.x <= -0x1388) {
+            if (flightList[_0xce61eb].autopilot == false) {
+              flightList[_0xce61eb].autopilot = true;
+              if (_0x189e86 >= 0x5a && _0x189e86 <= 0xb4) {
+                flightList[_0xce61eb].rotate = '>';
+              } else {
+                flightList[_0xce61eb].rotate = '<';
+              }
+            }
+          } else if (flightList[_0xce61eb].autopilot == true) {
+            flightList[_0xce61eb].rotate = '|';
+            flightList[_0xce61eb].autopilot = false;
+          }
+        }
+      }
+    }
+    _0x1be16c.translateZ(0x8);
+    if (_0xce61eb == 0x0) {
+      camera.position.set(_0x1be16c.position.x, _0x1be16c.position.y, _0x1be16c.position.z);
+      camera.rotation.y = _0x1be16c.rotation.y + Math.PI;
+      camera.translateZ(0x18);
+      camera.translateY(2.4);
+    }
+    let _0x6534c2 = scene.getObjectByName("sprite" + _0xce61eb);
+    _0x6534c2.position.set(_0x1be16c.position.x, _0x1be16c.position.y + 0.59, _0x1be16c.position.z);
+    _0x6534c2.rotation.y = _0x1be16c.rotation.y;
+    _0x6534c2.translateZ(0x5);
+    _0x6534c2.translateX(-0.39);
+  }
+  renderer.render(scene, camera);
+}
