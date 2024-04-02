@@ -1,6 +1,6 @@
 import * as _0xc385e8 from 'three';
 import { GLTFLoader } from 'https://rawcdn.githack.com/mrdoob/three.js/master/examples/jsm/loaders/GLTFLoader.js';
-let flightModel = '';
+let flighqtModel = '';
 let flightSprite = [];
 let flightList = [];
 let countdown = 0x16d;
