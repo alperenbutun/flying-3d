@@ -247,10 +247,12 @@ function animate() {
   if (!continueGame) {
     return;
   }
-  if (count % 3 == 0) {
+  
+count++;
+if (count % 3 == 0) {
   	return;
   } 
-  count++;
+  
   document.title = new Date().getTime() - date;
   date = new Date().getTime();
 
