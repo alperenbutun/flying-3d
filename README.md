@@ -4,6 +4,7 @@ MOST RECENT VERSION: [Please Click here to Play](https://rawcdn.githack.com/alpe
 
 TO DO: 
 * find a new cdn: quit githack
+* graphic
 * fps
 * bot
 * multiplayer
