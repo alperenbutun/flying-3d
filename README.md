@@ -1,3 +1,3 @@
 A ThreeJS project showing the movement of war jets on a plane.
 
-MOST RECENT VERSION: [Please Click here to Play](https://rawcdn.githack.com/alperenbutun/free-time-project/21d8f15/index.html)
+MOST RECENT VERSION: [Please Click here to Play](https://rawcdn.githack.com/alperenbutun/free-time-project/de41707/index.html)
