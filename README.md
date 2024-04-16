@@ -1,5 +1,5 @@
 A ThreeJS project. Showing the movement of jets on a plane. 
 
-MOST RECENT VERSION: [Please Click here to Play](https://rawcdn.githack.com/alperenbutun/free-time-project/49ec580/index.html)
+MOST RECENT VERSION: [Please Click here to Play](https://rawcdn.githack.com/alperenbutun/free-time-project/82abb23/index.html)
 
 **April 15, 2024:** Bots are being developed.
