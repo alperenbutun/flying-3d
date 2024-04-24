@@ -11,16 +11,130 @@
 				padding:0;
 				overflow:hidden;
 			}
+			.heart {
+			  margin: 0 8px;
+			  display: inline-block;
+			  animation: simplePulse ease-in-out 1.1s infinite;
+			}
+
+			.gauge {
+			  font-family: Arial, Helvetica, sans-serif;
+			  background: #e7e7e7;
+			  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.09), 0 0 35px 5px rgba(255, 255, 255, 0.29);
+			  width: 200px;
+			  height: 100px;
+			  border-radius: 100px 100px 0 0;
+			  position: relative;
+			  overflow: hidden;
+			  /* safari fix */
+			  -webkit-transform-style: flat;
+			  -webkit-transform: translateZ(0px);
+			}
+			.gauge.min-scaled {
+			  transform: scale(0.5);
+			}
+
+			.gauge-center {
+			  content: '';
+			  color: #fff;
+			  width: 60%;
+			  height: 60%;
+			  background: #15222E;
+			  border-radius: 100px 100px 0 0;
+			  position: absolute;
+			  box-shadow: 0 -13px 15px -10px rgba(0, 0, 0, 0.28);
+			  right: 21%;
+			  bottom: 0;
+			  color: #fff;
+			  text-align: center;
+			}
+			.gauge-center .label, .gauge-center .number {display:block; width: 100%; text-align: center; border:0!important;}
+			.gauge-center .label {font-size:0.75em; opacity:0.6; margin:1.1em 0 0.3em 0;}
+			.gauge-center .number {font-size:1.2em;}
+
+			.needle {
+			  width: 78px;
+			  height: 7px;
+			  background: #15222E;
+			  border-bottom-left-radius: 100%;
+			  border-bottom-right-radius: 5px;
+			  border-top-left-radius: 100%;
+			  border-top-right-radius: 5px;
+			  position: absolute;
+			  bottom: 4px;
+			  left: 20px;
+			  transform-origin: 100% 4px;
+			  animation: speed 5s infinite;
+			  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.38);
+			}
+
+			.slice-colors .st {
+			  position: absolute;
+			  bottom: 0;
+			  width: 60px;
+			  height: 0;
+			  border-bottom: 80px solid #000;
+			  border-left: 12px solid transparent;
+			  border-right: 12px solid transparent;
+			}
+			.slice-colors .st.slice-item:nth-child(1) {
+			  border-bottom-color: #EB8916;
+			  left: -5px;
+			}
+			.slice-colors .st.slice-item:nth-child(2) {
+			  border-bottom-color: #15C63C;
+			  transform: rotate(145deg);
+			  transform-origin: right;
+			  top: 12px;
+			  left: -30px;
+			}
+			.slice-colors .st.slice-item:nth-child(3) {
+			  border-bottom-color: #15C63C;
+			  transform: rotate(225deg);
+			  transform-origin: right;
+			  top: -50px;
+			  left: 25px;
+			}
+			.slice-colors .st.slice-item:nth-child(4) {
+			  border-bottom-color: #D74141;
+			  transform: rotate(35deg);
+			  transform-origin: right;
+			  right: -10px;
+			  bottom: -28px;
+			}
+			.slice-colors .st.slice-item:nth-child(5) {
+			  border-bottom-color: #D74141;
+			  transform: rotate(28deg);
+			  transform-origin: right;
+			  right: -10px;
+			  bottom: -50px;
+			}
 		</style>
 	</head>
-	<body style="background:#e8e8e8;">
+	<body style="background:#e1e1e1;">
 		<span id="loading" style="user-select:none;position:absolute;left:15px;top:15px;font-family:verdana;font-size:24px;"><span id="percentage">0% (0MB of 32MB) please wait...</span></span>
 		<canvas id="map" width="150" height="150" style="display:none;position:absolute; background:rgba(255,255,255,0.01);right:18px; bottom:18px; width:150px; height:150px;"></canvas>
 		<div id="table-head" style="z-index:1;display:none;user-select:none;position:absolute; opacity:0.75; left:15px; top:15px; background:white; width:500px; height:35px; font-family:verdana; font-size:18px; font-weight:bold;"><span id="table-span" style="position:relative;float:left;top:7px;left:11px;">NAME</span> <span style="position:relative;float:right;top:7px;right:11px;">HEALTH</span></div>
 		<div id="table" style="z-index:1;display:none;user-select:none;position:absolute; opacity:0.75; left:15px; top:53px; background:white; width:500px; height:auto; font-family:verdana; font-size:18px;"></div>
 		<div id="fullscreen-button" style="user-select:none;position:relative;width:250px;height:50px;margin:0 auto;top:100px;display:none;"><button onclick="window.startTheGame();" style="width:100%;height:100%;font-family:verdana;font-size:24px;border:none;border:1px solid #ccc;border-radius:7px;cursor:pointer;">START</button></div>
-		<div id="health-percentage" style="position:absolute;left:18px;bottom:18px;width:100px;display:none;">
-			<span style="position:relative;float:left;width:100%;height:10px;background:red;"><span style="position:relative;float:left;background:white;width:100%;height:100%;"></span></span>
+		<div id="health-percentage" style="position:absolute;opacity:0.75;left:18px;bottom:18px;width:200px;display:none;">
+			<span style="position:relative;float:left;width:100%;height:10px;background:red;"><span style="position:relative;float:left;background:white;width:90%;height:100%;"></span></span>
+		</div>
+		<div class="gauge-div" style="position:absolute;left:18px;bottom:35px;opacity:0.75;display:none">
+			<div class="gauge">
+				<div class="slice-colors">
+					<div class="st slice-item"></div>
+					<div class="st slice-item"></div>
+					<div class="st slice-item"></div>
+					<div class="st slice-item"></div>
+					<div class="st slice-item"></div>
+				</div>
+				<div class="needle" style="transform: rotate(90deg);"></div>
+				<div class="gauge-center">
+					<div class="label">SPEED</div>
+					<div class="number">10</div>
+				</div>
+			</div>
 		</div>
 		<script type="importmap">
 		  { 
@@ -29,6 +143,6 @@
 			}
 		  }
 		</script>
-		<script type="module" src="https://rawcdn.githack.com/alperenbutun/jets-online/a9b3c82/script.js"></script>
+		<script type="module" src="./script-update.js"></script>
 	</body>
 </html>
