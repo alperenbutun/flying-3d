@@ -1,3 +1,3 @@
 Jets Online. ThreeJS Project
 
-MOST RECENT VERSION: [Please Click here to Play](https://rawcdn.githack.com/alperenbutun/jets-online/67e9e3d/index.html)
+MOST RECENT VERSION: [Please Click here to Play](https://rawcdn.githack.com/alperenbutun/jets-online/87e7bb0/index.html)
