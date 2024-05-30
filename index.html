@@ -11,19 +11,9 @@
 				padding:0;
 				overflow:hidden;
 			}
-			.glass {
-				animation:zoomIn 10s linear infinite alternate-reverse;
-				background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/71829/5791996587_7b192ffbf7_o.jpg);
-				background-size:cover;
-				height:100vh;
-				opacity:0.1;
-				position:fixed;
-				width:100vw;
-			}
 		</style> 
 	</head>
 	<body style="background:#e1e1e1;">
-		<div style="display:none;z-index:1;position:fixed;left:0px;top:0px;width:100%;height:100%" class="glass"></div>
 		<span id="loading" style="z-index:9;user-select:none;position:absolute;left:15px;top:15px;font-family:verdana;font-size:24px;"><span id="percentage">0% (0MB of 32MB) please wait...</span></span>
 		<div id="table-head" style="z-index:9;display:none;user-select:none;position:absolute; opacity:0.75; left:15px; top:15px; background:white; width:500px; height:35px; font-family:verdana; font-size:18px; font-weight:bold;"><span id="table-span" style="position:relative;float:left;top:7px;left:11px;">NAME</span> <span style="position:relative;float:right;top:7px;right:11px;">JET HEALTH</span></div>
 		<canvas id="map" width="150" height="150" style="z-index:9;display:none;position:absolute; right:18px; bottom: 18px; background:#5e5e6e; width:150px; height:150px;"></canvas>
@@ -42,6 +32,6 @@
 			}
 		  }
 		</script>
-		<script type="module" src="https://rawcdn.githack.com/alperenbutun/Flying-3d/cd3cc39/script.js"></script>
+		<script type="module" src="https://rawcdn.githack.com/alperenbutun/Flying-3d/cd3cc39012123/script.js"></script>
 	</body>
 </html>
