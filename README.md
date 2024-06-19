@@ -1,3 +1,3 @@
 Flying 3D powered by ThreeJS
 
-MOST RECENT VERSION: [Please Click here to Play](https://rawcdn.githack.com/alperenbutun/Flying-3d/d00bf5a/index.html)
+MOST RECENT VERSION: [Please Click here to Play](https://rawcdn.githack.com/alperenbutun/Flying-3d/7e9e940/index.html)
