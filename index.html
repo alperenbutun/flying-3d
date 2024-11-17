@@ -15,15 +15,15 @@
 	</head>
 	<body style="background:#e1e1e1;">
 		<span id="loading" style="z-index:9;user-select:none;position:absolute;left:15px;top:15px;font-family:verdana;font-size:24px;"><span id="percentage">0% (0MB of 32MB) please wait...</span></span>
-		<div id="info-div" style="position:relative;top:75px;left:25px;">
-		SHIFT: Look back<br>
-		CTRL : Fire bullets 
+		<div id="info-div" style="position:relative;top:63px;left:25px;">
+		SHIFT: Look back
 		</div>
+		<canvas id="map" width="125" height="125" style="display:none;position:absolute; right: 15px; bottom: 15px; width:150px; height:150px;"></canvas>
 		<div id="table-head" style="z-index:9;display:none;user-select:none;position:absolute; left:15px; top:15px; background:white; width:500px; height:35px; font-family:verdana; font-size:18px; font-weight:bold;"><span id="table-span" style="position:relative;float:left;top:7px;left:11px;">NAME</span> <span style="position:relative;float:right;top:7px;right:11px;"></span></div>
 		<div id="table" style="z-index:9;;display:none;user-select:none;position:absolute; left:15px; top:53px; background:white; width:500px; height:auto; font-family:verdana; font-size:18px;"></div>
 		<div id="fullscreen-button" style="z-index:9;user-select:none;position:relative;width:250px;height:50px;margin:0 auto;top:100px;display:none;"><input id="enter-name" type="text" placeholder="NAME" style="padding-left:9px;outline:none;width:95%;height:50%;font-family:verdana;font-size:14px;border:none;border:1px solid #ccc;border-radius:7px;"/><button onclick="window.startTheGame();" style="width:100%;height:50%;font-family:verdana;font-size:14px;border:none;border:1px solid #ccc;border-radius:7px;cursor:pointer;">START</button></div>
-		<div id="altitude" title="Height" style="bottom:15px;display:none;z-index:9;user-select:none;position:absolute;font-family:verdana;font-weight:bold;font-size:18px;letter-spacing:1px;color:white;left:18px;"></div>
-		<div id="health-percentage" style="user-select:none;position:absolute;z-index:9;right:18px;bottom:15px;width:200px;display:none;">
+		<div id="altitude" title="Height" style="width:100px;text-align:center;bottom:34px;display:none;z-index:9;user-select:none;position:absolute;font-family:verdana;font-weight:bold;font-size:18px;letter-spacing:1px;color:white;left:18px;"></div>
+		<div id="health-percentage" style="user-select:none;position:absolute;z-index:9;left:18px;bottom:15px;width:100px;display:none;">
 			<span style="position:relative;float:left;width:100%;height:10px;background:red;"><span style="position:relative;float:left;background:white;width:100%;height:100%;"></span></span>
 		</div> 
 		<div id="space-div" style="text-align:center;z-index:9;letter-spacing:1px; position:absolute;display:block;color:white;text-shadow:2px 1px red;user-select:none;left:0px;top:35px;width:100%;height:24px;font-family:verdana;font-size:18px"></div>
@@ -34,6 +34,6 @@
 				}
 			}
 		</script>
-		<script type="module" src="https://rawcdn.githack.com/alperenbutun/Flying-3d/bdb7d39/script.js"></script>
+		<script type="module" src="../script-update.js"></script>
 	</body>
 </html>
